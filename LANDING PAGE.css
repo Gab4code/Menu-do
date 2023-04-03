@@ -1,0 +1,18 @@
+.ICON {
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    margin-left: 33%;
+}
+
+.LANDING_PAGE_DETAIL {
+    text-align: center;
+    padding: 50px;
+}
+
+img[alt="Carbonara"] {
+    margin-left: auto;
+    display: block;
+
+}
+
