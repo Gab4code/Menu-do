@@ -1,0 +1,39 @@
+
+.infos{
+    padding-left:50px;
+    padding-right: 350px;
+
+}
+#texts{
+    position: absolute;
+    right:150px;
+    left:150px;
+    top: 100px;
+    bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    color:azure;
+    background-color: cadetblue;
+}
+
+#Heading{
+    padding-left: 100px;
+    color:burlywood;
+}
+
+#detail{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.contacts{
+    text-align:left;
+}
+
+.navigation{
+    position:relative;
+	left: 1000px;
+    bottom: 275px;
+}

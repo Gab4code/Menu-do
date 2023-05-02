@@ -1,0 +1,81 @@
+.navBar{
+
+    color:bisque;
+    background-color:brown;
+    text-align: center;   
+}
+#brand{
+    padding-top: 3%;
+    padding-bottom: 3%;
+	padding-left: 3%;
+	text-align: left;
+    
+}
+.navBar a{
+	float: left;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	/* position: absolute;
+	left: 30px;
+	padding: 30px;
+	margin: 30px; */
+}
+.navBar a:link{
+	color: #c9e8fd;
+}
+.navBar a:visited{
+	color: brown;
+}
+.navBar a:hover{
+	background-color: #ddd;
+	color: #526d85;
+}
+
+.navBar a:active{
+	background-color: #395a57;
+	color: #c9e8fd;
+}
+#return{
+	position: absolute;
+	right: 10px;
+}
+
+#windows{
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 55px;
+	padding-bottom: 20px;
+	object-position: center;
+	object-fit: cover;
+	/* border-radius: 15px; */
+}
+
+.foodImg{
+	height: 250px;
+	width: 500px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+.foodImg:hover{
+	color: white;
+	/* box-shadow: 0 5px 15px #afe0f5; */
+	transform: scale(1.05);
+	transition: 1s;
+	/* opacity: 0.5; */
+}
+
+/* Review */
+#review{
+	position: absolute;
+	bottom: 25px;
+	right: 350px;
+	background-color: #c9e8fd;
+	font-size: 20px;
+	/* left: 970px; */
+}
+
