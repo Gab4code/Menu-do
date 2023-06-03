@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="customer_landing.css" type="text/css" />
+    <script src="customer_landing.js"></script>
+    <title>Customer Page</title>
+  </head>
+  <body>
+    <div id="katawan">
+      <div class="ICON">
+        <img src="MENU-DO_ICON.png" alt="Menu-do" />
+      </div>
+      <a href="GettingStarted.html">
+        <img src="back_arrow.png" alt="back_arrow" />
+      </a>
+      <table id="header_table">
+        <tr>
+          <td id="header">
+            <a href="contact_page.html"><h2>Contact Us</h2></a>
+          </td>
+          <td id="header">
+            <a href="#myLogin" onclick="openLogin()"
+              ><h2>Login / Register</h2></a
+            >
+          </td>
+          <td id="header">
+            <a href="customer_reservation.html"><h2>Reservations</h2></a>
+          </td>
+        </tr>
+      </table>
+
+      <table id="body_table">
+        <tr>
+          <td id="body" alt="announcement_container">
+            <section class="container">
+              <div class="slider-wrapper">
+                <a href="news_announcement.html">
+                  <p id="announcement_text">News & Announcements</p>
+                  <div class="slider">
+                    <img id="slide-1" src="firedance.png" alt="firedance" />
+                    <img id="slide-2" src="talaba.jpg" alt="talaba" />
+                    <img
+                      id="slide-3"
+                      src="accoustic.jpg"
+                      alt="accoustic"
+                    /></div
+                ></a>
+                <div class="slider-nav">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+              </div>
+            </section>
+          </td>
+          <td id="body" alt="menu_container">
+            <a href="menu_page.html">
+              <p id="menu_text">
+                Check out Our <br />
+                Seasonal <br />
+                Menu
+              </p>
+              <img src="blackboard_right.png" alt="b_right" />
+              <img src="blackboard_left.png" alt="b_left" />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td id="body" alt="item_container">
+            <div class="item_container">
+              <button type="submit" class="itembtn" onclick="openPopup()">
+                Item of the Day
+              </button>
+              <div class="popup" id="popup">
+                <img src="hot-wings.jpg" alt="Item of the day" />
+                <h2>Hot Chicken Wings</h2>
+                <p>
+                  The dish for the day is chicken wings marinated with
+                  <br />lemon grass, calamansi and hot bird eye chillis
+                </p>
+                <button type="button" onclick="closePopup()">CLOSE</button>
+              </div>
+            </div>
+            <script>
+              let popup = document.getElementById("popup");
+
+              function openPopup() {
+                popup.classList.add("open-popup");
+                document.querySelector(".slider-nav").style.opacity = "0";
+              }
+              function closePopup() {
+                popup.classList.remove("open-popup");
+                document.querySelector(".slider-nav").style.opacity = "1";
+              }
+            </script>
+          </td>
+          <td id="body" alt="review_container">
+            <a href="review_page.html">
+              <p id="review_text">Leave a Review / Suggestion</p>
+              <img src="customer_icon_white.png" alt="customer_icon_review_1" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <br />
+              <img src="customer_icon_white.png" alt="customer_icon_review_2" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <img src="star.png" alt="star_on" />
+              <img src="star_off.png" alt="star_off" />
+              <img src="star_off.png" alt="star_off" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="login-popup" id="myLogin">
+      <form action="" method="" class="login-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label
+        ><br />
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Email"
+          required
+        /><br />
+
+        <label for="password"><b>Password</b></label
+        ><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+          required
+        /><br />
+
+        <button type="button" class="login_btn">Login</button> <br />
+        Don't have an account?
+        <a href="#myRegister" onclick="openRegister()"
+          ><span style="color: blue">Register</span></a
+        ><br />
+        <a href="#myLogin" onclick="closeForm()">
+          <img src="back_arrow.png" alt="back_arrow_login" />
+        </a>
+      </form>
+    </div>
+
+    <!-- Customer Registration -->
+    <div class="register-popup" id="myRegister">
+      <form action="connectCust.php" method="post" class="register-container">
+        <h1>Register</h1>
+
+        <label for="remail"><b>Email</b></label
+        ><br />
+        <input
+          type="text"
+          name="regEmail"
+          placeholder="Enter a valid Email"
+          required
+        /><br />
+
+        <label for="username"><b>Username</b></label
+        ><br />
+        <input
+          type="text"
+          name="regUsername"
+          placeholder="Enter your username"
+          required
+        /><br />
+
+        <label for="rpassword"><b>Password</b></label
+        ><br />
+        <input
+          type="password"
+          name="regPassword"
+          placeholder="Enter your password"
+          required
+        /><br />
+
+        <label for="rerpassword"><b>Re-enter Password</b></label
+        ><br />
+        <input
+          type="password"
+          name="regRepassword"
+          placeholder="Re-enter your Password"
+          required
+        /><br />
+
+        <label for="memberID">MemberID Generated:</label> <br />
+        <p id="memberID"></p>
+
+        <!-- <button type="button" name="register" class="register_btn">
+          Register
+        </button> -->
+        <input
+          type="submit"
+          name="save"
+          value="Register"
+          class="register_btn"
+        />
+        <br />
+        Already have an account?
+        <a href="#myLogin" onclick="openLogin()"
+          ><span style="color: blue">Log-in</span></a
+        >
+        <a href="#myRegister" onclick="closeForm()">
+          <img src="back_arrow.png" alt="back_arrow_login" />
+        </a>
+        <!-- <?php echo $message; ?> -->
+      </form>
+    </div>
+  </body>
+</html>
